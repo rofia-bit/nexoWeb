@@ -48,6 +48,7 @@
 
 .order-btn:hover {
   background-color: #f26d2b;
+   cursor: url("../assets/pizzacurso.png") 16 16, pointer;
 }
 @media (max-width: 768px) {
   .nav-links {

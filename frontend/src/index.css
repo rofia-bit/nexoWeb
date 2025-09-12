@@ -1,7 +1,12 @@
-
-/* pizza cursor hover */
-.order-btn:hover,
-.nav-links a:hover {
-  cursor: url("../assets/pizzacurso.png") 16 16, pointer;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
