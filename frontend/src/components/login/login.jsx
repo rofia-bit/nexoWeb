@@ -2,11 +2,11 @@ import { useState } from "react";
 import "./login.css"; 
 
 function Login() {
-  // to make the vars dynamic >>>> usestate 
+  //  usestate 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  // function to handle the back later
+
   const handleLogin = (e) => {
     e.preventDefault();
     console.log("Login attempt:", { email, password });
@@ -14,7 +14,6 @@ function Login() {
 
   const handleGuest = () => {
     console.log("Continue as guest");
-    // later: navigate to menu
   };
 
   return (

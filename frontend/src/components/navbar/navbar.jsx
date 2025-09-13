@@ -25,33 +25,4 @@ export default function Navbar() {
 }
 
 
-     {/*
-    <header className="navbar">
-      <div className="logo">nexo</div>
-      <nav className="nav-links">
-        <a href="/menu">Menu</a>
-        <button onClick={() => setActiveModal("offers")}>Offers</button>
-        <button onClick={() => setActiveModal("locations")}>Locations</button>
-      </nav>
-      <button className="order-btn" onClick={() => setActiveModal("order")}>
-        Order Now
-      </button>
-
-      locations  
-      <SlideModal
-        isOpen={activeModal === "locations"}
-        onClose={() => setActiveModal(null)}
-        title="Our Locations"
-      >
-      </SlideModal>
-
-      {/* order 
-      <SlideModal
-        isOpen={activeModal === "order"}
-        onClose={() => setActiveModal(null)}
-        title="Place Your Order"
-      >
-        {/* add phone number here, or the check the menu option or anything 
-        <p>Choose your favorite pizza from our menu!</p>
-        <button onClick={() => setActiveModal("menu")}>Go to Menu</button>
-      </SlideModal>*/}
+     
