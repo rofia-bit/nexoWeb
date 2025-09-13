@@ -1,0 +1,141 @@
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e9e7e6, #f3f1ef);
+  position: relative;
+  overflow: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.floating {
+  position: absolute;
+  font-size: 2.5rem;
+  opacity: 0.7;
+}
+.pizza {
+  top: 40px;
+  left: 60px;
+  animation: bounce 3s infinite ease-in-out;
+}
+.cheese {
+  bottom: 100px;
+  right: 70px;
+  animation: float 6s infinite ease-in-out;
+}
+.fire {
+  top: 200px;
+  right: 40px;
+  animation: spin 10s linear infinite;
+}
+
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  background: white;
+  border-radius: 18px;
+  padding: 2.5rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(243, 78, 7, 0.25);
+  animation: fadeInUp 1s ease;
+}
+
+
+.brand {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #ff4d00;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+}
+.tagline {
+  font-size: 1rem;
+  color: #663300;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.form input {
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.form input:focus {
+  border-color: #ff6600;
+  box-shadow: 0 0 10px rgba(255, 102, 0, 0.3);
+  transform: scale(1.02);
+}
+
+
+.login-btn,
+.guest-btn {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.login-btn {
+  background: #ff4d00;
+  color: white;
+  box-shadow: 0 4px 12px rgba(255, 77, 0, 0.3);
+}
+.login-btn:hover {
+  background: #ff6600;
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(255, 102, 0, 0.4);
+}
+.guest-btn {
+  background: #ffcc00;
+  color: #663300;
+}
+.guest-btn:hover {
+  background: #ffe066;
+  transform: scale(1.05);
+}
+
+
+.login-btn:hover,
+.guest-btn:hover {
+  cursor: url('../../assets/pizzacurso.png') 16 16, pointer;
+}
+
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(15px); }
+}
+@keyframes spin {
+  from { transform: rotate(0); }
+  to { transform: rotate(360deg); }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
