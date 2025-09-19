@@ -5,7 +5,6 @@ import pizzaCursor from "../../assets/pizzacurso.png";
 export default function Navbar() {
   return (
     <header className="navbar">
-      {/* nexo logo */}
       <div className="logo">nexo</div>
 
       <nav className="nav-links">
