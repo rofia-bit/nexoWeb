@@ -1,11 +1,11 @@
 import React from "react";
 
 const menuItems = [
-  { id: 1, name: "Margherita Pizza", description: "Classic pizza with mozzarella.", category: "Classic" },
-  { id: 2, name: "Pepperoni Pizza", description: "Spicy pepperoni & cheese.", category: "Classic" },
-  { id: 3, name: "BBQ Chicken Sandwich", description: "Chicken with BBQ sauce.", category: "Desert" },
-  { id: 4, name: "Fried Chicken", description: "Crispy fried chicken.", category: "Drinks" },
-  { id: 5, name: "French Fries", description: "Golden crispy fries.", category: "Drinks" },
+  { id: 1, name: "Végétarienne", description: "Mozzarella, tomates en dés, poivron, oignon rouge, Herbes italiennes", category: "Classic" },
+  { id: 2, name: "3 fromages", description: "Mozzarella, cheddar, bleu cheese", category: "Classic" },
+  { id: 3, name: "cheese cake", description: "Creamy cheesecake with a cracker crust.", category: "Desert" },
+  { id: 4, name: "fanta", description: "fresh drink", category: "Drinks" },
+  { id: 5, name: "coca cola", description: "fresh drink", category: "Drinks" },
 ];
 
 export default function MenuGrid({ selectedCategory }) {
@@ -33,7 +33,6 @@ export default function MenuGrid({ selectedCategory }) {
                   <h3 className="text-lg font-medium">{item.name}</h3>
                   <p className="mt-1 text-sm text-gray-500">{item.description}</p>
                 </div>
-                <span className="text-lg font-semibold">${item.price}</span>
               </div>
             </div>
           </article>
