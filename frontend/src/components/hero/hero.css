@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pangolin&family=Quicksand:wght@300..700&display=swap');
+section{
+    display: flex;
+    justify-content: center;
+
+}
+
+.hero-card{
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+    width: 80vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* shadow */
+    border-radius: 30px; /* optional rounded corners */
+}
+
+.first-half{
+    width: 45%;
+    text-align: left;
+    padding: 150px 50px;
+}
+
+.first-half h1{
+    color: #bf2303;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+}
+.first-half p{
+    color: #000000;
+    font-family: 'Nunito';
+    font-weight: 300;
+    font-size: 26px;
+}
+.second-half{
+    background: url('https://thumbs.dreamstime.com/b/pizza-roasted-garlic-wild-mushrooms-fresh-thyme-isolated-white-background-ai-329060420.jpg');
+    width: 45%;
+    height: 100%; /* set a height so it shows up */
+}
+button{
+
+}

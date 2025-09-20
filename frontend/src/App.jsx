@@ -1,14 +1,29 @@
-import React from 'react';
-import Navbar from './components/navbar/navbar.jsx';
+import { useState } from 'react';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import Navbar from './components/navbar/navbar';
+import Hero from './components/hero/hero';
 
-const App = () => {
-  return (
-    <>
-      <Navbar />
-    </>
-  )
+function App() {
+
+  
+
+    return (
+      <>
+
+        <Navbar/>
+
+        <BrowserRouter>
+
+          <Routes>
+            <Route path='/hero' element={<Hero />}/>
+          </Routes>
+
+        </BrowserRouter>
+        
+      </>
+    )
+
+  
 }
 
-export default App;
-
-
+export default App
