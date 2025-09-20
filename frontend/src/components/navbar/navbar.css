@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+nav{
+    padding: 10px;
+}
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.navbar-secondsection {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.navbar-secondsection .list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.navbar-secondsection .list li a {
+    display: inline-block;
+    font-family: "Work sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600 ;
+    font-size: 18px;
+    color: #333;
+    transition: color 0.3s ease;
+    
+}
+
+.navbar-secondsection .list li a:hover {
+    color: #fa640d;
+    cursor: pointer;
+}
+
+button {
+    display: inline-block;
+    font-family: "Work sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700 ;
+    font-size: 15px;  
+    background-color: #333; /* dark grey */
+    color: white; /* text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    height: 55PX;
+    width: 150px;
+    transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #fa640d; /* lighter grey on hover */
+}
