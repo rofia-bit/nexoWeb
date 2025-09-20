@@ -1,20 +1,19 @@
 import React from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import offerr from "../../assets/offerr.jpg";
-import pizza12 from "../../assets/pizza12.jpg";
 
-//yji m backend api
+// Example data (replace later with API)
 const promos = [
   {
     title: "WIN COINS",
     description: "Play, Eat, Earn and gain points with every order.",
     link: "Read More",
-    image: offerr, //  backend path
+    image: offerr,
   },
   {
     title: "Our Latest Deals",
-    description: "new pizza deal !.",
-    image: pizza12,
+    description: "New pizza deal!",
+    image: offerr,
   },
 ];
 
@@ -58,6 +57,7 @@ const PromoCards = () => {
                   <p className="text-gray-800 font-semibold">{promo.link}</p>
                 )}
               </div>
+              {/* image on right */}
               {promo.image && (
                 <img
                   src={promo.image}
